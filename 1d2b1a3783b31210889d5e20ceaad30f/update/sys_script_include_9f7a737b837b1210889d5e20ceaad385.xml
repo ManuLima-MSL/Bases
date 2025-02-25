@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1593183_bases.ManagerUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ManagerUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ManagerUtils = Class.create();
+ManagerUtils.prototype = {
+    initialize: function() {
+    },
+
+    // Função para obter gerentes válidos
+    getValidManagers: function() {
+        var validManagers = [];  // Array para armazenar os sys_id dos gerentes válidos
+		var finalValidManagers = [];
+        // Passo 1: Query na tabela sys_user para encontrar os gerentes com a role específica
+        var grUser = new GlideRecord('sys_user');
+        grUser.addQuery('roles', 'dd2b1a3783b31210889d5e20ceaad340'); // Role específica
+        grUser.query();
+        while (grUser.next()) {
+            validManagers.push(grUser.sys_id.toString());
+}
+            // Passo 3: Query para verificar se o gerente já está vinculado a uma base
+            var grBase = new GlideRecord('x_1593183_bases_base'); // Nome da tabela de bases
+            grBase.query();
+
+            while(grBase.next()) {
+                if(validManagers.indexOf(grBase.manager.getUniqueValue()) == -1){
+					finalValidManagers.push(grBase.manager.getUniqueValue());
+				}
+            }
+        
+
+        return "sys_idIN" + finalValidManagers.join(',');
+    },
+
+    type: 'ManagerUtils'
+};
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 20:33:26</sys_created_on>
+        <sys_id>9f7a737b837b1210889d5e20ceaad385</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ManagerUtils</sys_name>
+        <sys_package display_value="Bases" source="x_1593183_bases">1d2b1a3783b31210889d5e20ceaad30f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases">1d2b1a3783b31210889d5e20ceaad30f</sys_scope>
+        <sys_update_name>sys_script_include_9f7a737b837b1210889d5e20ceaad385</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 21:02:10</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9f7a737b837b1210889d5e20ceaad385</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 20:33:26</sys_created_on>
+        <sys_id>293c33f7837b1210889d5e20ceaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 20:33:26</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

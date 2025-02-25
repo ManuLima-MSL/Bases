@@ -13,23 +13,17 @@
 ControlBaseUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     controlBase: function() {
-        var baseName = this.getParameter("sysparm_base_name");
+
         var city = this.getParameter("sysparm_city");
         var stateId = this.getParameter("sysparm_state");
 
-        // Verifica se já existe um registro com o mesmo nome
-        var grName = new GlideRecord("x_1593183_bases_base");
-        grName.addQuery("name", baseName);
-        grName.query();
-
-        // Verifica se já existe um registro com a mesma combinação de cidade e estado
         var grCityState = new GlideRecord("x_1593183_bases_base");
         grCityState.addQuery("city", city);
         grCityState.addQuery("state", stateId);
         grCityState.query();
 
         // Se encontrar qualquer base com o mesmo nome ou cidade+estado, retorna "true"
-        if (grName.next() || grCityState.next()) {
+        if (grCityState.next()) {
             return "true"; // Base com o mesmo nome ou a mesma cidade+estado já existe
         } else {
             return "false"; // Nenhuma base com o mesmo nome ou cidade+estado foi encontrada
@@ -43,14 +37,14 @@ ControlBaseUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-25 17:47:05</sys_created_on>
         <sys_id>94b643bb83771210889d5e20ceaad399</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>ControlBaseUtils</sys_name>
         <sys_package display_value="Bases" source="x_1593183_bases">1d2b1a3783b31210889d5e20ceaad30f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Bases">1d2b1a3783b31210889d5e20ceaad30f</sys_scope>
         <sys_update_name>sys_script_include_94b643bb83771210889d5e20ceaad399</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-25 18:16:11</sys_updated_on>
+        <sys_updated_on>2025-02-25 19:44:51</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>94b643bb83771210889d5e20ceaad399</id>
