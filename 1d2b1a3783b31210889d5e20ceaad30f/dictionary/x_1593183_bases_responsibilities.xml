@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="aa4b663b83f31210889d5e20ceaad379" label="Responsibilities" max_length="40" name="x_1593183_bases_responsibilities" type="collection">
+        <element display="true" label="Title" max_length="250" name="title" type="string"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+    </element>
+</database>
