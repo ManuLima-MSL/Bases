@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="517cae7b83f31210889d5e20ceaad34e" extends="task" label="Assignments" max_length="40" name="x_1593183_bases_assignments" type="collection">
-        <element label="Base" max_length="32" name="base" reference="x_1593183_bases_base" type="reference"/>
+        <element label="Base" max_length="32" name="base" reference="x_1593183_bases_base" reference_qual="javascript:new x_1593183_bases.ControlAssigmentsUtils().controlRegistration();" type="reference" use_reference_qualifier="advanced"/>
         <element label="Job Title" max_length="32" name="job_title" reference="x_1593183_bases_responsibilities" type="reference"/>
         <element label="Reproval Reason" max_length="4000" name="reproval_reason" type="string"/>
     </element>
