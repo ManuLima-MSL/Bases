@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Assignment Bases">b298130483402210889d5e20ceaad393</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 12:41:05</sys_created_on>
+        <sys_id>ab89574483402210889d5e20ceaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assignment Bases.Bases Users</sys_name>
+        <sys_package display_value="Bases" source="x_1593183_bases">1d2b1a3783b31210889d5e20ceaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">1d2b1a3783b31210889d5e20ceaad30f</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_ab89574483402210889d5e20ceaad34e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 12:41:05</sys_updated_on>
+        <user_criteria display_value="Bases Users">c199574483402210889d5e20ceaad3d3</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>

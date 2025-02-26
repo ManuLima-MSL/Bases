@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Bases" name="Bases">f04f574c83402210889d5e20ceaad33a</category>
+        <collection>x_1593183_bases_assignments</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p data-end="154" data-start="137">Dear ${opened_by.first_name},</p>
+<p data-end="376" data-start="156">We are pleased to confirm that you have successfully been registered in the base ${base.name} with the responsibility of ${job_title.title}. Your request has been processed, and you are now officially linked to this base and role.</p>
+<p data-end="467" data-start="378">If you have any questions or need further assistance, please don&rsquo;t hesitate to reach out.</p>
+<p data-end="502" data-start="469">Thank you for using our platform!</p>
+<p data-end="564" data-start="504">Best regards,</p>
+<p data-end="564" data-start="504">${base.manager.name}.</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Registration in Base Confirmed</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>opened_by</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Confirmation of Base and Responsibility Assignment - ${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 13:11:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1fe9f0c83402210889d5e20ceaad3cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Registration in Base Confirmed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases" source="x_1593183_bases">1d2b1a3783b31210889d5e20ceaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">1d2b1a3783b31210889d5e20ceaad30f</sys_scope>
+        <sys_update_name>sysevent_email_action_a1fe9f0c83402210889d5e20ceaad3cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:12:46</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

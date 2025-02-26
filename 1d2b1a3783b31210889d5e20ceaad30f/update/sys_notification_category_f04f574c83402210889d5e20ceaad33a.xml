@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_category">
+    <sys_notification_category action="INSERT_OR_UPDATE">
+        <name>Bases</name>
+        <short_description/>
+        <sys_class_name>sys_notification_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 13:05:30</sys_created_on>
+        <sys_id>f04f574c83402210889d5e20ceaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bases</sys_name>
+        <sys_package display_value="Bases" source="x_1593183_bases">1d2b1a3783b31210889d5e20ceaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">1d2b1a3783b31210889d5e20ceaad30f</sys_scope>
+        <sys_update_name>sys_notification_category_f04f574c83402210889d5e20ceaad33a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:05:30</sys_updated_on>
+    </sys_notification_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=f04f574c83402210889d5e20ceaad33a"/>
+</record_update>
